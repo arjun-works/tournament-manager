@@ -2,6 +2,8 @@
 
 A comprehensive web application built with Python Streamlit for managing Carrom tournaments from registration to completion. This application provides a complete solution for tournament organizers to manage participants, create matches, track winners, and generate reports.
 
+**Live Demo**: [Deploy on Streamlit Cloud]
+
 ## Features
 
 ### 🎯 Core Features
@@ -16,22 +18,27 @@ A comprehensive web application built with Python Streamlit for managing Carrom 
 ### 📊 Additional Features
 - **Participant History**: View individual participant match history
 - **Real-time Dashboard**: Live tournament statistics and recent activities
-- **Category Support**: Mens Singles, Womens Singles, Mens Doubles, Womens Doubles, Mixed Doubles
-- **Offline Support**: Works offline with data sync capabilities
-- **Email Notifications**: Framework ready for sending winner notifications (implementation pending)
+- **Category Support**: Men's Singles, Women's Singles, Men's Doubles, Women's Doubles, Mixed Doubles
+- **Cloud Deployment**: Fully compatible with Streamlit Cloud
+- **Cross-platform**: Works on any device with a web browser
 
-## Installation
+## Quick Start
 
-### Prerequisites
-- Python 3.8 or higher
-- Internet connection (for initial setup)
+### For Streamlit Cloud Deployment
 
-### Setup Instructions
+1. **Fork this repository** to your GitHub account
+2. **Deploy on Streamlit Cloud**:
+   - Go to [share.streamlit.io](https://share.streamlit.io)
+   - Connect your GitHub account
+   - Deploy this repository
+   - The app will automatically install dependencies and start
 
-1. **Clone or Download the Application**
+### For Local Development
+
+1. **Clone the repository**
    ```bash
-   # Navigate to your desired directory
-   cd "c:\Users\2322594\OneDrive - Cognizant\Outreach\CC_Automation\Streamlit_app"
+   git clone <your-repo-url>
+   cd carrom-tournament-manager
    ```
 
 2. **Install Required Packages**
@@ -39,15 +46,65 @@ A comprehensive web application built with Python Streamlit for managing Carrom 
    pip install -r requirements.txt
    ```
 
-3. **Create Sample Data (Optional)**
-   ```bash
-   python create_sample_data.py
-   ```
-
-4. **Run the Application**
+3. **Run the Application**
    ```bash
    streamlit run app.py
    ```
+
+## How to Use
+
+1. **Import Participants**: Upload an Excel file with participant data or add participants manually
+2. **Registration Desk**: Mark participants as present when they arrive
+3. **Create Matches**: Generate fixtures for different categories
+4. **Track Winners**: Record match results as tournaments progress
+5. **Generate Reports**: Export data and view tournament statistics
+
+## File Structure
+
+```
+├── app.py                 # Main Streamlit application
+├── fixtures_utils.py      # Utility functions for match management
+├── requirements.txt       # Python dependencies
+├── .streamlit/config.toml # Streamlit configuration
+├── README.md             # This file
+└── .gitignore            # Git ignore rules
+```
+
+## Dependencies
+
+- streamlit==1.32.0
+- pandas==2.1.0
+- openpyxl==3.1.2
+- plotly==5.18.0
+
+## Features by Category
+
+### 🏓 Tournament Categories
+- Men's Singles
+- Women's Singles
+- Men's Doubles
+- Women's Doubles
+- Mixed Doubles
+
+### 📊 Reports Available
+- Participant lists by category
+- Match results and winners
+- Tournament progress tracking
+- Downloadable Excel exports
+
+## Notes
+
+- **Email Functionality**: Email features (Outlook integration) are disabled in cloud deployment but work in Windows local deployment
+- **Database**: Uses SQLite for data persistence, automatically creates tables on first run
+- **Responsive Design**: Works on desktop, tablet, and mobile devices
+
+## Support
+
+For support or questions, please create an issue in the GitHub repository.
+
+---
+
+Built with ❤️ using Python and Streamlit
 
 5. **Access the Application**
    - Open your web browser and go to `http://localhost:8501`
