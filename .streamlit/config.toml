@@ -1,0 +1,17 @@
+# Streamlit configuration file
+[theme]
+primaryColor = "#FF6B35"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+
+[server]
+port = 8501
+address = "localhost"
+maxUploadSize = 200
+
+[browser]
+gatherUsageStats = false
+
+[global]
+developmentMode = false
