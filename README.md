@@ -72,10 +72,10 @@ A comprehensive web application built with Python Streamlit for managing Carrom 
 
 ## Dependencies
 
-- streamlit==1.32.0
-- pandas==2.1.0
-- openpyxl==3.1.2
-- plotly==5.18.0
+- streamlit>=1.32.0
+- pandas>=2.2.0 (Python 3.13 compatible)
+- openpyxl>=3.1.2
+- plotly>=5.18.0
 
 ## Features by Category
 
